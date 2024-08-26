@@ -1,0 +1,25 @@
+{
+  "name": "maryana-qa",
+  "version": "1.0.0",
+  "description": "Desafio Tecnico de QA - Maryana Feijo",
+  "main": "src/index.html",
+
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maryfeijo/desafio-saucedemo/"
+    
+  },
+  "keywords": [
+    "Testing",
+    "Cypress.io"
+  ],
+  "author": "Maryana Feijo <maryana.feijo.7@gmail.com>",
+  "devDependencies": {
+    "cypress": "^9.5.1"
+  }
+}
