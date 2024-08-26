@@ -17,7 +17,7 @@ describe('Pagina de produto do saucedemo', function() {
        cy.wait(500); })
 
       //Verifica se  pode excluir um produto do carrinho
-      it('Verifica se  pode excluir um produto do carrinho', function() {
+      it.only('Verifica se  pode excluir um produto do carrinho', function() {
       cy.get('.item_pricebar > .btn_secondary').click();
       cy.get('.item_pricebar > .btn_secondary').should('not.exist');
       cy.wait(500);
@@ -52,16 +52,23 @@ describe('Pagina de produto do saucedemo', function() {
     cy.wait(500);
           })
 
-         
+        })
+
+   
+        describe('Carrinho', function() {
+ 
+          beforeEach(function() {
+            cy.visit('https://www.saucedemo.com/v1/cart.html')
+        })
     //Verifica botao 'Voltar aos produtos'
     it('Verifica botao Voltar aos produtos', function() {
-    cy.get('.inventory_details_back_button').should('exist');
-    cy.get('.inventory_details_back_button').click({ force: true });
+    cy.get('.btn_secondary').should('exist');
+    cy.get('.btn_secondary').click({ force: true });
     cy.get('.product_label').should('exist');
     cy.wait(500);
     })
-
-        })
+ 
+  }) 
 
 
 
