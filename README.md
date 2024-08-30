@@ -1,5 +1,5 @@
 <h1 align="center"> Desafio de QA </h1> 
-<h4>Este projeto foi realizado para um desafio técnico de QA, utilizando o site https://www.saucedemo.com/</h4>
+<h4>Este projeto foi realizado para um desafio técnico de QA, utilizando o site https://www.saucedemo.com/v1/index.html</h4>
 <h2> Pré-requisitos:</h2>
 
 - [git](https://git-scm.com/) (versão `2.34.1` ou superior)
